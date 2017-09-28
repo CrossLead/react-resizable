@@ -4,17 +4,7 @@
   "description": "A component that is resizable with handles.",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --ext .js,.jsx lib/ test/; flow",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "bash build.sh",
-    "build-example": "webpack",
-    "dev": "webpack-dev-server --open --open-page=examples/1.html",
-    "watch": "webpack --progress --watch",
-    "prepare": "npm run build",
-    "preversion": "npm run lint",
-    "version": "git add CHANGELOG.md",
-    "postversion": "git push && git push --tags",
-    "flow": "flow"
+    "build": "bash build.sh"
   },
   "repository": {
     "type": "git",
@@ -56,8 +46,5 @@
   "dependencies": {
     "prop-types": "15.x",
     "react-draggable": "^2.2.6 || ^3.0.3"
-  },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org"
   }
 }
